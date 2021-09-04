@@ -12,7 +12,7 @@ The Siren demo blog development build based on ReactJS, Mongodb and Node.js
 
 3) Within the config.js of the 'backend-server', change the Database Name of your desired choice
 (By default, react_blog)
-4) Open a Terminal and run the following commands from the main folder #### required
+4) Open a Terminal and run the following commands from the main folder (required)
 	#### This will import the demo data into the Mongo Database 
 	#### Change <db_name> with the configured DB Name
 	
