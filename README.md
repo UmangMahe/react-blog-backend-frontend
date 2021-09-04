@@ -23,7 +23,7 @@ The Siren demo blog project based on ReactJS, MongoDb and Node.js
 	
 
 5) Open terminal from 'backend-server'
-Run node server.js
+	* node server.js
 
 6) Open another terminal from 'react_blog_project'
 (npm must be configured automatically with node.js)
