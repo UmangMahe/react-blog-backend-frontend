@@ -1,5 +1,5 @@
 # react-blog-backend-frontend
-The Siren demo blog project based on ReactJS, MongoDb and Node.js
+The Siren demo blog project based on ReactJS, Mongodb and Node.js
 
 ## Configuration
 
