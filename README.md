@@ -12,7 +12,6 @@ The Siren demo blog project based on ReactJS, MongoDb and Node.js
 
 3) Within the config.js of the 'backend-server', change the Database Name of your desired choice
 (By default, react_blog)
-
 4) Open a Terminal and run the following commands from the main folder
 
 mongoimport --db <db_name> -c blogs --file data/blogs.json
