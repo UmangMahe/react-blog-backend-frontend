@@ -27,7 +27,7 @@ The Siren demo blog project based on ReactJS, Mongodb and Node.js
 
 6) Open another terminal from 'react_blog_project'
 (npm must be configured automatically with node.js)
-	* npm install (only for first time)
+	* npm install (to install all the dependencies - only for first time)
 	* npm start
 
 7) At the browser - http://localhost:3000
