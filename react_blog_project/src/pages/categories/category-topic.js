@@ -21,7 +21,7 @@ class CategoryTopic extends Component {
 
         componentDidMount(){
             axios({
-                url:'http://localhost:3001/api/category/',
+                url:global.config.base_url()+'/api/category/',
                 method: 'GET',
                 params: {
                     type: this.state.topic

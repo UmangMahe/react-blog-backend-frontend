@@ -12,7 +12,7 @@ class TheLatest extends Component {
         }
     }
     componentDidMount(){
-        axios.get("http://localhost:3001/api/homepage/thelatest").then((response)=>{
+        axios.get(global.config.base_url()+"/api/homepage/thelatest").then((response)=>{
             this.setState({
                 data: response.data
             })

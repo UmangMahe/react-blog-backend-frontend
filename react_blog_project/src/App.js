@@ -7,6 +7,7 @@ import PageNotFound from "./pages/page-not-found";
 import Category from "./pages/categories/category";
 import CategoryTopic from "./pages/categories/category-topic";
 import Posts from "./pages/posts/posts";
+import './config'
 
 
 

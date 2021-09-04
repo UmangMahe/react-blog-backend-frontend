@@ -2,7 +2,7 @@ import axios from "axios";
 import { Component } from "react";
 import Category2 from "../latestArticlesCategory2/category2";
 import Sidebar from "../sidebar";
-import './../styles/latest-articles.css'
+import '../styles/latest-articles.css'
 import LatestArticlesRender from "./latestarticles-render";
 
 class LatestArticles extends Component {
@@ -15,7 +15,7 @@ class LatestArticles extends Component {
     }
 
     componentDidMount(){
-        axios.get("http://localhost:3001/api/homepage/latestarticles").then((response)=>{
+        axios.get(global.config.base_url()+"/api/homepage/latestarticles").then((response)=>{
             this.setState({
                 data: response.data
             })

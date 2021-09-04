@@ -16,7 +16,7 @@ class Home extends Component {
     }
 
     componentDidMount(){
-        axios.get("http://localhost:3001/api/subheading").then((response)=>{
+        axios.get(global.config.base_url()+"/api/subheading").then((response)=>{
             this.setState({
                 subHeadingJson: response.data
             })

@@ -35,7 +35,7 @@ const Header = () => {
 
     const handleMenuData = () => {
         
-        axios.get("http://localhost:3001/api/header/menu").then((response)=>{
+        axios.get(global.config.base_url()+"/api/header/menu").then((response)=>{
             setMenuData(response.data)
         })
         .catch((error)=>{
@@ -58,7 +58,7 @@ const Header = () => {
                 <div className="header">
                 <div className="logo">
                     <span>
-                        <img alt="logo" src="media/logo.png" />
+                        <img alt="logo" src="/media/logo.png" />
                     </span>
                 </div>
                 

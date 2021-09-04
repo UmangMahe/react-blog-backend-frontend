@@ -20,7 +20,7 @@ class Posts extends Component {
         return <p>Loading...</p>
     }
     componentDidMount(){
-        axios.get("http://localhost:3001/api/category/post"+this.props.location.search).then((response)=>{
+        axios.get(global.config.base_url()+"/api/category/post"+this.props.location.search).then((response)=>{
             if(response.data.length){
                 this.setState({
                     data: response.data[0],

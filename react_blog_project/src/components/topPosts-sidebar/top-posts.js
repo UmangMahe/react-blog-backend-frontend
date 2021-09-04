@@ -1,6 +1,6 @@
 import { Component } from "react";
 import TopPostsRender from "./top-posts-render";
-import './../styles/top-posts.css'
+import '../styles/top-posts.css'
 import axios from "axios";
 
 class TopPosts extends Component {
@@ -13,7 +13,7 @@ class TopPosts extends Component {
     }
 
     componentDidMount(){
-        axios.get("http://localhost:3001/api/sidebar/top-post").then((response)=>{
+        axios.get(global.config.base_url()+"/api/sidebar/top-post").then((response)=>{
             this.setState({
                 data: response.data
             })

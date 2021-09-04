@@ -1,6 +1,6 @@
 import { Component } from "react";
 import LatestStoriesRender from "./latest-stories-render";
-import './../styles/latest-stories.css'
+import '../styles/latest-stories.css'
 import axios from "axios";
 
 class LatestStories extends Component{
@@ -12,7 +12,7 @@ class LatestStories extends Component{
     }
 
     componentDidMount(){
-        axios.get("http://localhost:3001/api/homepage/lateststories").then((response)=>{
+        axios.get(global.config.base_url()+"/api/homepage/lateststories").then((response)=>{
             this.setState({
                 data: response.data
             })

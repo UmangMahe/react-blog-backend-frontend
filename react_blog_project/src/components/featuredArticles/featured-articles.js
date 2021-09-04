@@ -1,4 +1,4 @@
-import './../styles/featured-articles.css'
+import '../styles/featured-articles.css'
 import { Component } from 'react';
 import FeaturedArticlesRender from './featured-articles-render';
 import axios from 'axios';
@@ -19,7 +19,7 @@ class FeaturedArticles extends Component {
     componentDidMount(){
         var bigImage = []
         var smallImage = []
-        axios.get("http://localhost:3001/api/homepage/featured").then((response)=>{
+        axios.get(global.config.base_url()+"/api/homepage/featured").then((response)=>{
                 if(response.data.length){
                     
                     response.data.map((value, index)=>{
