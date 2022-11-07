@@ -10,7 +10,7 @@ app.use(cors())
 const mongoose = require('mongoose')
 
 
-mongoose.connect(config.dbUrl(), {useNewUrlParser:true,useUnifiedTopology:true, useCreateIndex: true},(err, connection)=>{
+mongoose.connect(config.dbUrl(), {useNewUrlParser:true,useUnifiedTopology:true},(err, connection)=>{
     if(err)
         console.log(err)
     else{

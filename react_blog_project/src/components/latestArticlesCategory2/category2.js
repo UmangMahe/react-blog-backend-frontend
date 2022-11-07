@@ -1,6 +1,6 @@
 import { Component } from "react";
 import MetaDisplay from "../meta-display";
-import './../styles/category2.css'
+import '../styles/category2.css'
 
 
 class Category2 extends Component{

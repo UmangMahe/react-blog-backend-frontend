@@ -17,6 +17,7 @@ class TopPosts extends Component {
             this.setState({
                 data: response.data
             })
+            console.log(global.config.base_url())
             
         })
         .catch((error)=>{

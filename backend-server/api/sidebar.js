@@ -5,13 +5,14 @@ const mongoose = require('mongoose')
 const Blogs = mongoose.model("blogs")
 
 const getOldDate = ()=>{
-        var date = new Date()
+        const date = new Date()
         var oldDate = date.getDate()-6
-        return date.setDate(oldDate)
+        date.setDate(date.getDate()-6)
+        return date
 }
 router.use('/top-post', (req, res)=>{
     console.log("SideBar Top Post Route ", req.url)
-    Blogs.find({date: {$gte: getOldDate()}}).sort({claps: -1, date: -1}).limit(4).exec((error, result)=>{
+    Blogs.find({date: {$lte: new Date()}}).sort({claps: -1, date: -1}).limit(4).exec((error, result)=>{
         if(error)
             console.log("Error ",error.message)
         res.json(result)

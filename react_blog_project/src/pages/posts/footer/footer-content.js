@@ -1,6 +1,6 @@
 import { Component } from 'react'
 import FooterContentJSON from '../../../data/footer-content.json'
-import '../footer/footer-content.css'
+import './footer-content.css'
 
 class FooterContent extends Component {
 
